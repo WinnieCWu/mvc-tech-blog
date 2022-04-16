@@ -1,7 +1,7 @@
 const sequelize = require('../config/connection');
 const { User, Post } = require('../models');
 
-// 11 base fake users
+// base fake users
 const userdata = [
     {
         username: 'tinkerbell',
@@ -9,8 +9,8 @@ const userdata = [
         password: 'pw123'
     },
     {
-        username: 'musicl0v3r',
-        email: 'musicl0v3r@mail.com,
+        username: 'musiclover',
+        email: 'musiclover@mail.com',
         password: 'pw123'
     },
     {
