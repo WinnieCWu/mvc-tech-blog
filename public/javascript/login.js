@@ -1,17 +1,18 @@
 async function loginFormHandler(event) {
     event.preventDefault();
 
-    const email = document.querySelector('#email-signup').value.trim();
-    const password = document.querySelector('#password-signout').value.trim();
+    const email = document.querySelector('#email-login').value.trim();
+    const password = document.querySelector('#password-login').value.trim();
 
     if (email && password) {
         const response = await fetch('/api/users/login', {
             method: 'post',
             body: JSON.stringify({
-                email, password
+                email, 
+                password,
             }),
             headers: { 'Content-Type': 'application/json' }
-        })
+        });
         // check the response status with '.ok' property on response object
         if (response.ok) {
             document.location.replace('/dashboard/');
@@ -41,7 +42,7 @@ async function signupFormHandler(event) {
         });
         // check the response status with '.ok' property on response object
         if (response.ok) {
-            console.log('success');
+            document.location.replace("/dashboard/");
         } else {
             alert(response.statusText);
         }

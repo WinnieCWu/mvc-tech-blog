@@ -25,7 +25,7 @@ const postdata = [
         title: 'Forever Young',
         post_url: 'https://www.youtube.com/watch?v=1k8craCGpgs',
         user_id: 2
-    },
+    }
 ];
 
 const seedPosts = () => Post.bulkCreate(postdata);
