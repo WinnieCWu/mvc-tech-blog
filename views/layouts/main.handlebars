@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <title>MVC Tech Blog</title>
+</head>
+
+<body>
+  <div class="d-flex flex-row">
+      <header class="menu flex-column">
+        <h1 id="heading">
+        <a href="/">MVC Tech Blog</a>
+        </h1>
+
+      <nav>
+        {{#if loggedIn}}
+        <a href="/dashboard">dashboard</a>
+        <button id="logout" class=" btn-no-style">logout</button>
+        {{else}}
+        <a href="/login">
+        <button id="loginBtn" class="btn-light btn-outline-dark">login</button></a>
+        <button id="signupBtn" class="btn-light btn-outline-dark">sign up</button>
+        {{/if}}
+
+      </nav>
+    </header>
+    <main>
+      {{{ body }}}
+    </main>
+    <footer class="text-light">
+      Thanks for visiting!
+    </footer>
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>

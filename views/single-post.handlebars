@@ -1,0 +1,23 @@
+<!-- include posts and associated votes/comments-->
+{{> post-info post}}
+
+{{#if loggedIn}}
+<!-- include form and comments-->
+<form class="comment-form">
+  <div>
+    <textarea name="comment-body"></textarea>
+  </div>
+
+  <div>
+    <button type="submit">add comment</button>
+    <button type="button" class="vote-btn">vote</button>
+  </div>
+</form>
+{{/if}}
+
+{{> comments post.comments}}
+
+{{#if loggedIn}}
+<script src="/javascript/comment.js"></script>
+<script src="/javascript/upvote.js"></script>
+{{/if}}
