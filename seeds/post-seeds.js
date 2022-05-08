@@ -18,12 +18,12 @@ const postdata = [
     },
     {
         title: 'I hate you, I love you',
-        post_url: 'https://www.youtube.com/watch?v=1k8craCGpgs',
+        post_url: 'https://www.youtube.com/watch?v=BiQIc7fG9pA',
         user_id: 1
     },
     {
         title: 'Forever Young',
-        post_url: 'https://www.youtube.com/watch?v=1k8craCGpgs',
+        post_url: 'https://www.youtube.com/watch?v=oNjQXmoxiQ8',
         user_id: 2
     }
 ];
