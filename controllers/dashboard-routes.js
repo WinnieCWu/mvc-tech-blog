@@ -48,7 +48,7 @@ router.get("/", withAuth, (req, res) => {
     });
 });
 
-router.get("/edit/:id", withAuth, (res, req) => {
+router.get("/edit/:id", withAuth, (req, res) => {
   Post.findByPk(req.params.id, {
     attributes: [
       "id",
@@ -73,10 +73,9 @@ router.get("/edit/:id", withAuth, (res, req) => {
     ]
   })
     .then(dbPostData => {
-      if (!dbPostData) {
+      if (dbPostData) {
         // serialize the data
         const post = dbPostData.get({ plain: true });
-
         // pass data to template
         res.render("edit-post", {
           post,

@@ -2,7 +2,7 @@ const { Vote } = require('../models');
 
 const votedata = [
   {
-    user_id: 7,
+    user_id: 2,
     post_id: 3
   },
   {
@@ -14,11 +14,11 @@ const votedata = [
     post_id: 5
   },
   {
-    user_id: 7,
+    user_id: 3,
     post_id: 2
   },
   {
-    user_id: 9,
+    user_id: 4,
     post_id: 1
   }
 ];

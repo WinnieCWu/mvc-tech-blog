@@ -29,11 +29,8 @@ app.set("view engine", "handlebars");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-//static() can take all contents of folder and serve as static assets.
-//useful for front-end files
 
 app.use(express.static(path.join(__dirname, "public")));
-//set as app's preferred template engine of choice
 
 // turn on routes
 app.use(require("./controllers"));

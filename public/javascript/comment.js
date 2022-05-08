@@ -8,8 +8,7 @@ async function commentFormHandler(event) {
     const post_id = window.location.toString().split("/")[
       window.location.toString().split("/").length - 1
     ];
-    //confirm we have the right info .. then replace with 'if' statement below
-    // console.log(comment_text, post_id);
+ 
     if (comment_text) {
       //wrap request to avoid user submitting empty string
       const response = await fetch("/api/comments", {

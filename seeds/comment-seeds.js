@@ -13,12 +13,12 @@ const commentdata = [
   },
   {
     comment_text: 'Hi there!',
-    user_id: 6,
+    user_id: 2,
     post_id: 4
   },
   {
     comment_text: 'Where did you go?',
-    user_id: 9,
+    user_id: 5,
     post_id: 2
   }
 ];

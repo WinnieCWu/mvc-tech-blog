@@ -4,7 +4,7 @@ const postdata = [
     {
         title: 'A little pick-me-up for a bad day',
         post_url: 'https://www.youtube.com/watch?v=1k8craCGpgs',
-        user_id: 2
+        user_id: 3
     },
     {
         title: 'Never stop believing in yourself!',
@@ -14,12 +14,12 @@ const postdata = [
     {
         title: 'MVC to save the day',
         post_url: 'https://www.youtube.com/watch?v=1k8craCGpgs',
-        user_id: 11
+        user_id: 3
     },
     {
         title: 'I hate you, I love you',
         post_url: 'https://www.youtube.com/watch?v=1k8craCGpgs',
-        user_id: 7
+        user_id: 1
     },
     {
         title: 'Forever Young',
